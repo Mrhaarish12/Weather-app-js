@@ -35,5 +35,19 @@
             </div>
         </div>
     </div>
+
+<script>
+    const apiKey = "35eb9823934a54af1ad98ff98e9c69f6";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=gorakhpur";
+
+async function checkWeather(){
+    const response = await fetch(apiUrl+`&appid=${apiKey}`);
+    var data = await responsel.json();
+
+    console.log(data);
+}
+
+</script>
+
 </body>
 </html>
